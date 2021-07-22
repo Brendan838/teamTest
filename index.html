@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<input type="text" placeholder = "xxx" maxlength = "3" id="highScoreInitials">
+     	<input id="highScoreSubmit" type="submit" value="enter"> 
+
+
+
+	<script>
+
+	var initialsValue = document.querySelector("#highScoreInitials");
+	var submitForm = document.querySelector("#highScoreSubmit");
+
+	submitForm.addEventListener("click", getInfo)
+
+	function  getInfo(e) {
+	e.preventDefault();
+	var info = initialsValue.value
+	console.log(info)
+	
+
+	}
+
+
+
+	</script>
+</body>
+</html>
